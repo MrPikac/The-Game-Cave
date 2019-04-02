@@ -1,12 +1,17 @@
-// @import "reset";
+@import "reset";
 @import "template/header.scss";
 @import "template/footer.scss";
 
 aside {
-   background-image: url("/The-Game-Cave/img/sidepic.jpg");
+   background-color: black;
    height: 100px;
    width: 250px;
-
+   display: inline;
 
 }
 
+
+.pill-nav li a {
+   {
+   font-size: 20px;
+}

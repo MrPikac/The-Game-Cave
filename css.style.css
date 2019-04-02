@@ -43,4 +43,10 @@ table {
   border-spacing: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+.proba {
+  width: 250px;
+  height: 200px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=css.style.css.map */

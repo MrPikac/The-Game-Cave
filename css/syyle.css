@@ -15,14 +15,14 @@ h1 {
 }
 
 .foot {
-  width: 1110px;
-  height: 40px;
+  width: 250px;
+  height: 100px;
   background-color: #1F2833;
 }
 
 footer {
   width: 1110px;
-  height: 200px;
+  height: 40px;
   background-color: #1F2833;
 }
 
@@ -32,4 +32,4 @@ aside {
   width: 250px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=syyle.css.map */

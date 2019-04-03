@@ -2,16 +2,18 @@
 @import "template/header.scss";
 @import "template/footer.scss";
 
-aside {
-   background-color: black;
-   height: 100px;
-   width: 250px;
-   display: inline;
-
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #0B0C10;
 }
 
 
-.pill-nav li a {
-   {
-   font-size: 20px;
+aside {
+   // background-color: black;
+   background-image: url("../img/sidepic.jpg");
+   height: 100%;
+   width: 150px;
+   display: inline-block;
+
 }

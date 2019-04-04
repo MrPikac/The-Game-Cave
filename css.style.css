@@ -44,9 +44,55 @@ table {
 }
 
 .proba {
-  width: 250px;
-  height: 200px;
-  background-color: black;
+  width: 100%;
+  height: 100px;
+  background-color: #1F2833;
+}
+
+h1 {
+  color: #66FCF1;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 64px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer {
+  width: 1110px;
+  height: 75px;
+  background-color: #1F2833;
+}
+
+.hugecont {
+  max-width: 100%;
+  height: 100% px;
+  background-image: url("../img/sidepic.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.smthelse {
+  width: 1500 px;
+  height: 1500px;
+  color: #0B0C10;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #1F2833;
 }
 
 /*# sourceMappingURL=css.style.css.map */

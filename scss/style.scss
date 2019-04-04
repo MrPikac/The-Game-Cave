@@ -2,11 +2,11 @@
 @import "template/header.scss";
 @import "template/footer.scss";
 
-body {
-   margin: 0;
-   padding: 0;
-   background-color: #0B0C10;
-}
+// body {
+//    margin: 0;
+//    padding: 0;
+//    background-color: #0B0C10;
+// }
 
 
 .hugecont {
@@ -21,10 +21,21 @@ body {
    width: 1500 px;
    height: 1500px;
    color: #0B0C10;
-
 }
 
 
-.navshit {
-   
+ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+li {
+   display: inline;
+}
+
+a {
+   display: block;
+  padding: 8px;
+  background-color: #1F2833;
 }

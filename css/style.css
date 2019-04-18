@@ -132,11 +132,16 @@ p {
 
 .grid-container {
   display: inline-grid;
+  margin: auto;
   grid-template-rows: 300px 50px 300px 50px 300px 50px;
   grid-template-columns: 20%;
-  width: 80%;
-  margin: auto;
+  width: 100%;
   grid-column-gap: 10px;
+}
+
+.grid-containers {
+  display: grid;
+  grid: auto;
 }
 
 .item1 {
@@ -229,6 +234,29 @@ p {
   grid-row-end: 6;
 }
 
+.item7 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.item8 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.item9 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .centter {
   display: flex;
   justify-content: center;
@@ -239,6 +267,7 @@ p {
 .placeholder {
   width: 45%;
   height: 250px;
+  align-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

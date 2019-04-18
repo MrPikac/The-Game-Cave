@@ -60,7 +60,7 @@ h1 {
 }
 
 footer {
-  width: 1110px;
+  width: 80%;
   height: 75px;
   background-color: #1F2833;
   margin: auto;
@@ -108,12 +108,18 @@ nav li a {
 
 main {
   background-color: #0B0C10;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin: auto;
 }
 
-.imgs {
-  display: inline-block;
+h2 {
+  font-weight: bold;
+  color: #C5C6C7;
+  font-size: 32px;
+  font-style: italic;
+  text-align: center;
+  padding-top: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

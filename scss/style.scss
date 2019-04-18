@@ -2,60 +2,68 @@
 @import "template/header.scss";
 @import "template/footer.scss";
 
-   
-   
-   .hugecont {
-      max-width: 100%;
-      height: 100%;
-      background-image: url("../img/sidepic.jpg");
-      background-repeat: repeat;
-      background-size: contain;
-   }
 
 
-   .fixnav {
-      // width: 700px;
-      margin: auto;
-      border-top-style: solid;
-      border-top-width: 2px;
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
-      border-color: #66FCF1;
-   }
-   
-   
-   nav {
-      background-color: #1F2833;
-      list-style-type: none;
-      text-align: center;
-      padding: 0;
-      margin: 0;
-   }
+.hugecont {
+   max-width: 100%;
+   height: 100%;
+   background-image: url("../img/sidepic.jpg");
+   background-repeat: repeat;
+   background-size: contain;
+}
 
 
-   nav li {
-      display: inline-block;
-      font-size: 20px;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 5px;
-   }
-   
-   
-   nav li a {
-      color: #66FCF1;
-      font-weight: bold;
-      font-style: italic;
-      padding: 20px;
-   }
-   
+.fixnav {
+   margin: auto;
+   border-top-style: solid;
+   border-top-width: 2px;
+   border-bottom-width: 2px;
+   border-bottom-style: solid;
+   border-color: #66FCF1;
+}
+
+
+nav {
+   background-color: #1F2833;
+   list-style-type: none;
+   text-align: center;
+   padding: 0;
+   margin: 0;
+}
+
+
+nav li {
+   display: inline-block;
+   font-size: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 5px;
+}
+
+
+nav li a {
+   color: #66FCF1;
+   font-weight: bold;
+   font-style: italic;
+   padding: 20px;
+}
 
 main {
    background-color: #0B0C10;
-   width: 100%;
+   width: 80%;
    height: 100%;
+   margin: auto;
 }
 
-.imgs {
-   display: inline-block;
+h2 {
+   font-weight: bold;
+   color: #C5C6C7;
+   font-size: 32px;
+   font-style: italic;
+   text-align: center;
+   padding-top: 25px;
 }
+
+// .imgs {
+   //    display: inline-block;
+   // }

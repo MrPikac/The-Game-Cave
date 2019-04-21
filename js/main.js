@@ -50,102 +50,69 @@ function rotateAnimation(el,speed) {
 rotateAnimation("anim",20);
 
 
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
 
-// LIGHTBOX
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
 
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// var currentImg = 0;
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-// document.querySelector('.overlay img').onclick = function() {
-//   document.querySelector('.overlay').style.display = "none";
-// }
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-// var allImg = document.querySelectorAll('.gallery .item img');
-
-// for (let i = 0; i < allImg.length; i++) {
-//   allImg[i].onclick = function() {
-//     var clickedImg = this.src;
-//     document.querySelector('.overlay img').src = clickedImg;
-//     document.querySelector('.overlay').style.display = "flex";
-//     currentImg = i;
-//   }
-// }
-
-// function prev() {
-
-// }
-
-// function next() {
-//   if (currentImg + 1 >= allImg.length) {
-//     currentImg = -1;
-//   }
-//   var nextImg = currentImg + 1;
-//   var imgSrc = allImg[nextImg].src;
-//   document.querySelector('.overlay img').src = imgSrc;
-
-//   currentImg = nextImg;
-// }
-
-
-
-
-
-
-// var xmlhttp = new XMLHttpRequest();
-// var url = "https://api.myjson.com/bins/rmmro";
-
-// xmlhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//         var myArr = JSON.parse(this.responseText);
-//         myFunction(myArr);
-//     }
-// };
-
-// xmlhttp.open("GET", url, true);
-// xmlhttp.send();
-
-// function myFunction(arr) {
-//     var out = "";
-//     var i;
-//     for(i = 0; i < arr.length; i++) {
-//         out += '<a href="' + arr[i].url + '">' +
-//         arr[i].display + '</a><br>';
-//     }
-//     document.getElementById("moba").innerHTML = out;
-// }
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 
 
 
 
 
+var req = new XMLHttpRequest();
+var url = "https://api.myjson.com/bins/8gpks";
 
+req.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myArr = JSON.parse(this.responseText);
+        myFunction(myArr);
+    }
+};
+req.open("GET", url, true);
+req.send();
 
-
-
-
-
-
-  // API
-  // https://api.myjson.com/bins/u22x0
-  const xhr = new XMLHttpRequest();
-  xhr.responseType = 'json';
-  
-  xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4) {
-        if (xhr.status == 200) {
-          for(let i=1; i<10; i++){
-            let tmp = document.querySelector("#gl-"+i);
-            if(tmp !== null) {
-            tmp.setAttribute("src", xhr.response.galleryImages[i]);
-            }
-          }
-        }
-  
-        if (xhr.status == 404) {
-          console.log("File or resource not found");
-        }
-      }
-  };
-  
-  xhr.open('get', 'https://api.myjson.com/bins/u22x0', true);
-  xhr.send();
+function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out += '<a href="' + arr[i].url + '">' +
+        arr[i].display + '</a><br>';
+    }
+    document.getElementById("id01").innerHTML = out;
+}

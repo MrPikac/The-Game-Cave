@@ -252,16 +252,11 @@ form {
 .nesto {
    display: flex;
    justify-content: center;
-   height: 400px; /* or other desired height */
+   height: 400px;
    overflow: hidden;
 }
 
 
-
-// DID I USE THIS OR NAH FAM?????
-// img {
-//    flex: none; /* keep aspect ratio */
-// }
 
 
 label {
@@ -277,3 +272,20 @@ label {
    height: 70px;
    width: 70px;
 }
+
+
+
+div.overlay {
+   position: fixed;
+   height: 100vh;
+   width: 100vw;
+   background-color: rgba(0, 0, 0, .6);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+ 
+ div.gallery .item img {
+   max-width: 300px;
+ }

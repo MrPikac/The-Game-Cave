@@ -47,7 +47,41 @@ function rotateAnimation(el,speed) {
 }
 
 
-
-
-
 rotateAnimation("anim",20);
+
+
+
+// LIGHTBOX
+
+
+var currentImg = 0;
+
+document.querySelector('.overlay img').onclick = function() {
+  document.querySelector('.overlay').style.display = "none";
+}
+
+var allImg = document.querySelectorAll('.gallery .item img');
+
+for (let i = 0; i < allImg.length; i++) {
+  allImg[i].onclick = function() {
+    var clickedImg = this.src;
+    document.querySelector('.overlay img').src = clickedImg;
+    document.querySelector('.overlay').style.display = "flex";
+    currentImg = i;
+  }
+}
+
+function prev() {
+
+}
+
+function next() {
+  if (currentImg + 1 >= allImg.length) {
+    currentImg = -1;
+  }
+  var nextImg = currentImg + 1;
+  var imgSrc = allImg[nextImg].src;
+  document.querySelector('.overlay img').src = imgSrc;
+
+  currentImg = nextImg;
+}

@@ -289,3 +289,37 @@ div.overlay {
  div.gallery .item img {
    max-width: 300px;
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 500) {
+   .item1 {
+      display: block;
+   }
+   .item1t {
+      display: block;
+   }
+   .item2 {
+      display: block;
+   }
+   .item2t {
+      display: block;
+   }
+ }

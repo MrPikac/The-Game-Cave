@@ -85,6 +85,7 @@ p {
 .grid-containers {
  display: grid;
  grid: auto;
+ position: relative;
 }
 
 // INDEX PAGE
@@ -185,27 +186,20 @@ p {
 .item7 {
    grid-column-start: 1;
    grid-column-end: 2;
-   // display: block;
 }
 
 .item8 {
    grid-column-start: 3;
    grid-column-end: 4;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
 }
 
 .item9 {
    grid-column-start: 5;
    grid-column-end: 6;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
 }
 // END OF SC2 PAGE
+
+
 .centter {
    display: flex;
    justify-content: center;
@@ -219,6 +213,7 @@ p {
    width: 45%;
    height: 250px;
    align-content: center;
+   margin: auto;
 }
 
 

@@ -141,6 +141,7 @@ p {
 .grid-containers {
   display: grid;
   grid: auto;
+  position: relative;
 }
 
 .item1 {
@@ -235,19 +236,11 @@ p {
 .item8 {
   grid-column-start: 3;
   grid-column-end: 4;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .item9 {
   grid-column-start: 5;
   grid-column-end: 6;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 
 .centter {
@@ -261,6 +254,7 @@ p {
   width: 45%;
   height: 250px;
   align-content: center;
+  margin: auto;
 }
 
 a {

@@ -263,4 +263,9 @@ p {
   align-content: center;
 }
 
+a {
+  text-decoration: none;
+  color: #C5C6C7;
+}
+
 /*# sourceMappingURL=style.css.map */

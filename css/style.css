@@ -264,8 +264,11 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: #C5C6C7;
+}
+
+form {
+  padding: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

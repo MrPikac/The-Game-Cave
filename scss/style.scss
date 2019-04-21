@@ -182,22 +182,34 @@ p {
    grid-row-end: 6;
 }
 
-// SC2 PAGE
+// GAME PAGE
 .item7 {
    grid-column-start: 1;
    grid-column-end: 2;
+   display: flex;
+   justify-content: center;
+   height: 300px;
+   overflow: hidden;
 }
 
 .item8 {
    grid-column-start: 3;
    grid-column-end: 4;
+   display: flex;
+   justify-content: center;
+   height: 300px;
+   overflow: hidden;
 }
 
 .item9 {
    grid-column-start: 5;
    grid-column-end: 6;
+   display: flex;
+   justify-content: center;
+   height: 300px;
+   overflow: hidden;
 }
-// END OF SC2 PAGE
+// END OF GAME PAGE
 
 
 .centter {
@@ -224,4 +236,32 @@ a {
 
 form {
    padding: 25px;
+}
+
+
+.nesto {
+   display: flex;
+   justify-content: center;
+   height: 400px; /* or other desired height */
+   overflow: hidden;
+}
+
+
+
+// DID I USE THIS OR NAH FAM?????
+// img {
+//    flex: none; /* keep aspect ratio */
+// }
+
+
+label {
+   color: #C5C6C7;
+}
+
+
+
+
+.fill {
+   height: 150px;
+   width: 100%;
 }
